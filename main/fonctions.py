@@ -23,7 +23,7 @@ def book_scraper(list_link):
         title = soup.find("h1").string
         infos_products["Titre"] = title
 
-        #recupere la category du livre et la stock dans le dictionnaire "infos_products" pas fonctionnel
+        #recupere la category du livre et la stock dans le dictionnaire "infos_products"
         liste_category = []
         li = soup.find_all("li")
         for info in li:
