@@ -132,7 +132,8 @@ def book_scraper(list_link):
         image = soup.find("img")
         image = image["src"]
         image = image.replace("../../", "")
-        infos_products["Image"] = "https://books.toscrape.com/" + image
+        name_image = "https://books.toscrape.com/" + image
+        infos_products["Image"] = name_image
 
         #ajoute les données d'un livre dans la liste "all_infos_products"
         all_infos_products.append(infos_products)
@@ -143,7 +144,7 @@ def book_scraper(list_link):
             for data in all_infos_products:
                 writer.writerow(data)
 
-
-
-
-
+        file_name = title.replace(" ", ".") + ".jpg"
+        image_data = requests.get(name_image).content
+        with open(file_name, "wb") as file:
+            file.write(image_data)
