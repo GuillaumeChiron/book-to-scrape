@@ -70,8 +70,6 @@ def category_scraper(all_liste_category):
               
     return list_link 
 
-print(category_scraper(all_category_scraper()))
-
 
 #Fonction qui permet de recupérer les données d'un seul livre et le renvoie sous forme d'un dictionnaire
 def book_scraper(list_link):
