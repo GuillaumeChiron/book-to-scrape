@@ -6,7 +6,7 @@ from fonctions import (
 
 
 categories = all_category_scraper()
-for row in categories[:3]:
+for row in categories:
     books = category_scraper(row["Category"], row["Lien"])
     book_scraper(books)
 
