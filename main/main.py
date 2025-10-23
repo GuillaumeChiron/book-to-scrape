@@ -1,7 +1,13 @@
-from fonctions import book_scraper
-from fonctions import category_scraper
-from fonctions import all_category_scraper
+from fonctions import (
+    book_scraper,
+    category_scraper,
+    all_category_scraper,
+)
+
 
 categories = all_category_scraper()
-books = category_scraper(categories)
-book_scraper(books)
+for row in categories[:3]:
+    books = category_scraper(row["Category"], row["Lien"])
+    book_scraper(books)
+
+print("Scraping terminé.")
