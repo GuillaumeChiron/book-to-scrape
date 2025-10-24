@@ -19,11 +19,11 @@ Les données sont enregistrées sous forme de fichiers **CSV** par categories et
 ## Packages utilisées
 
 - Python 3.11+
-- [Requests](https://docs.python-requests.org/)
-- [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/)
-- [CSV](https://docs.python.org/3/library/csv.html)
-- [OS](https://docs.python.org/3/library/os.html)
-- [re](https://docs.python.org/3/library/re.html)
+- Requests
+- BeautifulSoup4
+- CSV
+- OS
+- re
 
 ---
 
@@ -58,7 +58,7 @@ Le script `main.py` execute ces fonctions dans l’ordre suivant :
     
     Résultat : 
 
-    -Catégorie scrapé : "nom de la categorie"
-    -Données livre "n°" enregistrées
-    -...
-    -Scraping terminé
+    - Catégorie scrapé : "nom de la categorie"
+    - Données livre "n°" enregistrées
+    - ...
+    - Scraping terminé
