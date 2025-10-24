@@ -58,7 +58,7 @@ Le script `main.py` execute ces fonctions dans l’ordre suivant :
     
     Résultat : 
 
-    Catégorie scrapé : "nom de la categorie"
-    Données livre "n°" enregistrées
-    ...
-    Scraping terminé
+    -Catégorie scrapé : "nom de la categorie"
+    -Données livre "n°" enregistrées
+    -...
+    -Scraping terminé
