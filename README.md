@@ -27,12 +27,26 @@ Les données sont enregistrées sous forme de fichiers **CSV** par categories et
 
 ---
 
+## Fonctionnement global
+
+Le script `main.py` execute ces fonctions dans l’ordre suivant :
+
+1. `all_category_scraper()` : récupère toutes les catégories  
+2. `category_scraper()` : récupère les livres de chaque catégorie  
+3. `book_scraper()` : extrait et enregistre les informations de chaque livre  
+
+À la fin du processus, toutes les données sont sauvegardées dans le dossier `data/`.
+
+---
+
 ## Installation
 
 1. **Cloner le dépôt :**
    ```bash
    git clone https://github.com/GuillaumeChiron/book-to-scrape.git
    cd book_to_scrape
+
+---
 
 ## Utilisation
 
