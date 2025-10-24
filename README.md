@@ -2,7 +2,7 @@
 
 Ce projet est un **scraper Python** permettant d’extraire automatiquement toutes les données du site [Books to Scrape](https://books.toscrape.com), y compris les catégories, les informations détaillées des livres et leurs images.  
 
-Les données sont enregistrées sous forme de fichiers **CSV** par categories et les **images** téléchargées localement.
+Les données sont enregistrées sous forme de fichiers **CSV** par categories et les **images** téléchargées.
 
 ---
 
@@ -10,7 +10,7 @@ Les données sont enregistrées sous forme de fichiers **CSV** par categories et
 
 - Récupération automatique de **toutes les catégories** de livres  
 - Extraction de **tous les livres** de chaque catégorie  
-- Enregistrement des données (titre, prix, disponibilité, description, etc.) au format **CSV**  
+- Enregistrement des données (titre, prix, description, etc.) au format **CSV**  
 - Téléchargement des **images** associées  
 - Organisation automatique des fichiers dans un dossier `data/`
 
@@ -39,3 +39,7 @@ Les données sont enregistrées sous forme de fichiers **CSV** par categories et
 1. Exécute le script principal :
    ```bash
    python main.py
+
+2.  Retour attendu : 
+    
+    Résultat : Scraping terminé
