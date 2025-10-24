@@ -8,15 +8,15 @@ Les données sont enregistrées sous forme de fichiers **CSV** par categories et
 
 ## Fonctionnalités
 
-- Récupération automatique de **toutes les catégories** de livres  
+- Récupération de **toutes les catégories** de livres  
 - Extraction de **tous les livres** de chaque catégorie  
 - Enregistrement des données (titre, prix, description, etc.) au format **CSV**  
 - Téléchargement des **images** associées  
-- Organisation automatique des fichiers dans un dossier `data/`
+- Enregistrement des fichiers dans un dossier `data/`
 
 ---
 
-## Technologies utilisées
+## Packages utilisées
 
 - Python 3.11+
 - [Requests](https://docs.python-requests.org/)
@@ -35,7 +35,7 @@ Le script `main.py` execute ces fonctions dans l’ordre suivant :
 2. `category_scraper()` : récupère les livres de chaque catégorie  
 3. `book_scraper()` : extrait et enregistre les informations de chaque livre  
 
-À la fin du processus, toutes les données sont sauvegardées dans le dossier `data/`.
+À la fin, toutes les données sont sauvegardées dans le dossier `data/`.
 
 ---
 
@@ -56,4 +56,9 @@ Le script `main.py` execute ces fonctions dans l’ordre suivant :
 
 2.  Retour attendu : 
     
-    Résultat : Scraping terminé
+    Résultat : 
+
+    Catégorie scrapé : "nom de la categorie"
+    Données livre "n°" enregistrées
+    ...
+    Scraping terminé
